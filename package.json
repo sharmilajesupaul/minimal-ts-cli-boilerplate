@@ -1,0 +1,31 @@
+{
+  "name": "finddir",
+  "version": "1.0.0",
+  "description": "find files of a given directory",
+  "main": "dist/index.js",
+  "author": "Sharmila Jesupaul",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@babel/register": "^7.16.9",
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "babel index.ts -x .ts --out-dir dist",
+    "coverage": "jest --coverage; open coverage/index.html",
+    "prepublish": "yarn build",
+    "start": "yarn build && node dist/index.js",
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "watch": "nodemon"
+  }
+}
