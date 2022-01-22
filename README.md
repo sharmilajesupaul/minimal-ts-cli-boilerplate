@@ -1,8 +1,10 @@
 # Minimal Typescript CLI Boilerplate
 
-Requirements: NodeJS >= v16
+Requirements: NodeJS >= v16 (ships with npm)
 
 ## Commands
+
+First, run `yarn` to add dependencies. If `yarn` is not available on your PATH, install it using `npm i -g yarn`
 
 ### Development
 
